@@ -22,3 +22,9 @@ Edit the `cases` and `certifications` arrays in `script.js`, and your introducti
 
 ## Version 1.1 refinements
 Hero role line now reads SOC Analyst / Defensive Operations / Incident Response; the top bar and footer use Blue Team and Defensive Operations respectively. Projects & Operations is an explicit navigation/category label. The new Concepts & Commands section presents security models, network foundations and clearly illustrative read-only command examples; it is not evidence of completed lab activity. All original investigation and project records remain intact.
+
+## Portrait update
+The landing-page portrait is `shivansh-portrait.jpg`. Upload it to the SAME root folder as `index.html`, `style.css`, and `script.js`. The existing SOC console remains below the portrait. You can replace the photo later using the same filename without editing HTML.
+
+## Update your EXISTING GitHub Pages repository
+Open your current repository, choose **Add file → Upload files**, and upload the five website files (`index.html`, `style.css`, `script.js`, `shivansh-portrait.jpg`, and optionally `README.md`) into the repository root. Commit the changes to the same branch already configured under Settings → Pages. Replace existing files rather than making a new repository. Your published URL stays the same.

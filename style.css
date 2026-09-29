@@ -15,3 +15,16 @@
 .command-line code{display:block;overflow-wrap:anywhere;color:var(--accent);font:11px/1.7 var(--mono);margin:5px 0}
 @media(max-width:1000px){.concept-grid{grid-template-columns:1fr 1fr}.concept-terminal{grid-column:1/-1}}
 @media(max-width:760px){.concept-grid{grid-template-columns:1fr}.concept-terminal{grid-column:auto}.concepts-section{padding-top:25px;padding-bottom:70px}}
+
+/* Portrait integration: right-side hero photo above the original SOC console. */
+.hero-visual{min-width:0;display:flex;flex-direction:column;gap:18px;align-self:center}
+.hero-visual .hero-console{transform:none}
+.portrait-panel{margin:0;position:relative;isolation:isolate;overflow:hidden;border:1px solid #3b6b65;background:#10222b;min-height:280px;height:clamp(280px,30vw,365px);box-shadow:0 18px 55px #0005}
+.portrait-panel::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 60%,#07121ad9 100%)}
+.hero-portrait{display:block;width:100%;height:100%;object-fit:cover;object-position:center 37%;filter:saturate(.84);transition:transform .5s ease}
+.portrait-panel:hover .hero-portrait{transform:scale(1.025)}
+.portrait-panel figcaption{position:absolute;z-index:1;left:19px;right:19px;bottom:16px;display:flex;align-items:end;justify-content:space-between;gap:12px;font:10px var(--mono);letter-spacing:1.2px;color:#effaf7;text-shadow:0 2px 8px #000}
+.portrait-separator,.portrait-corner{color:var(--accent)}
+.portrait-corner{font-size:19px}
+@media(max-width:760px){.hero-visual{width:100%;max-width:540px;margin:0 auto}.portrait-panel{height:clamp(300px,70vw,430px)}}
+@media(prefers-reduced-motion:reduce){.hero-portrait{transition:none}}
